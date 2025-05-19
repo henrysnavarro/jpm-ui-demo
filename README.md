@@ -25,6 +25,18 @@ The application starts with a data source selector, input fields and an empty re
 NOTE:
 All of filtering, sorting and paging are performed client-side (in-memory), on the data fetched by the application
 
+## Implementation Details
+
+- The collection shown by the application at any time is computed by the facets in the following order:
+    - Search Filter
+    - Sort By Column , Sort Order (Ascending/Descending)
+    - Page Size
+
+    Hence, any change in a facet above will reset the facets that come after it.  For example, a change in the search filter text will reset the sort column, sort order and pages
+    - A change in Page Size resets the display to the first page
+
+    The above behavior enforces correct display and valid states of data in the application
+     
 ## Technical Information
 
 ### Techniques and Methods
@@ -53,4 +65,5 @@ As of the time of writing, the following items are yet to be implemented:
 - Unit Testing
 - Integration Testing
 - Storybook Testing
-- Live Device Testing (mobile, small screen size )
+- Live Device Testing (mobile)
+
