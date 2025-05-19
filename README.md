@@ -1,2 +1,1 @@
-# jpm-ui-demo
-Created with CodeSandbox
+# UI Demo
