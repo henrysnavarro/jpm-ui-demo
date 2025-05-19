@@ -53,4 +53,4 @@ As of the time of writing, the following items are yet to be implemented:
 - Unit Testing
 - Integration Testing
 - Storybook Testing
-
+- Live Device Testing (mobile, small screen size )
