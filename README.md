@@ -47,5 +47,10 @@ All of filtering, sorting and paging are performed client-side (in-memory), on t
 As of the time of writing, the following items are yet to be implemented:
 
 - TypeScript error fixes
+- Re-factoring for code streaming and best practices alignment
+- WCAG/Accessibility features
+- Theming
 - Unit Testing
+- Integration Testing
+- Storybook Testing
 
